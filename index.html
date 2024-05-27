@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="calculator">
-            <div class="display"><div class="display-numbers">1 + 4</div></div>
+            <div class="display"><p class="display-numbers">36987488888889999999999</p></div>
             <div class="buttons-row nested-flex-container">
                 <div class="button-1"><button>1</button></div>
                 <div class="button-2"><button>2</button></div>
@@ -32,59 +32,10 @@
 
             <div class="buttons-row nested-flex-container">
                 <div class="button-0"><button>0</button></div>
-                <div class="button-clear"><button>Clear</button></div>
-                <div class="button-equal"><button>Eval</button></div>
+                <div class="button-clear"><button>AC</button></div>
+                <div class="button-equal"><button>=</button></div>
                 <div class="button-divide"><button>/</button></div>
             </div>
-
-            <style>
-                .calculator {
-                    display : flex;
-                    flex-wrap: wrap;
-                    align-content: space-evenly;
-                    justify-content: space-evenly;
-                    font-size: 24px;
-                    width: 600px;
-                    row-gap : 0px;
-                    border : 5px solid silver; 
-                    border-radius: 25px;
-                }
-                .display {
-                    flex: 1 1 100%;
-                    display : flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    border: 3px solid black;
-                    background-color: teal; 
-                    height: 100px;
-                    font-size: 42px;
-
-                }
-                .buttons-row {
-                    display: flex;
-                    justify-content: space-evenly;
-                    column-gap: 0px;
-                    flex-basis: 100%; /* Prevent auto-sizing based on content */
-                    flex-grow: 1; /* Allow to grow to fill available space */
-                    flex-shrink: 0; /* Prevent shrinking */
-                    height: 60px;
-                }
-                .buttons-row > div {
-                    display : flex;
-                    align-content: center;
-                    justify-content: center;
-                    border: 1px solid black; 
-                    flex: 1 1 1px;
-                    text-align: center;
-                    line-height: 100%;  
-                    border-radius: 25px;
-                }
-                button {
-                    flex : 1 1 100%;
-                    font-size: 30px;
-                }
-            </style>
         </div>
         <script src="index.js"></script>
     </body>
